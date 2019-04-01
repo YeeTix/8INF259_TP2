@@ -1,10 +1,12 @@
 #pragma once
 #include <iostream>
 
+//template <class cellType>
+
 class ChromoCell
 {
 public:
-	int element;
+	int element;  
 	ChromoCell *filsgauche;
 	ChromoCell *filsdroit;
 	ChromoCell(int elem, ChromoCell *g = NULL, ChromoCell *d = NULL)//constructeur avec paramètres
@@ -22,4 +24,5 @@ private:
 	//TODO
 	
 	friend std::istream& operator >> (std::istream& in, ChromoCell& cell);
+	
 };
